@@ -20,4 +20,11 @@ class Main
     end
   end
 
+  def divide(n, m)
+    if n == 0
+      return 'divide by 0 is not allowd'
+    end
+    return m/n
+  end
+
 end

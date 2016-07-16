@@ -27,4 +27,11 @@ class MinitestPracticeTest < Minitest::Test
     refute @minitest.enough_length?('mn'), 'NG (insufficient length)'
   end
 
+  def test_method_devide
+    message = "divide by 0 is not allowd"
+    assert_equal 2, @minitest.divide(3, 6), '6 / 3 = 2'
+    assert_equal 4, @minitest.divide(5, 23), '23 / 5 = 4 ... 3'
+    assert_equal message, @minitest.divide(0, 23), 'divide by 0 is not allowd'
+  end
+
 end
