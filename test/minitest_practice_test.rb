@@ -41,4 +41,8 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal "", @minitest.fizzbuzz(91), 'return ""'
   end
 
+  def test_method_greet
+    assert_output("Hello\n") { @minitest.greet }
+  end
+
 end

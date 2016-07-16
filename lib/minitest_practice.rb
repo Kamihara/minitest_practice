@@ -32,4 +32,8 @@ class Main
     return fizzbuzz[n % 15]
   end
 
+  def greet
+    puts("Hello")
+  end
+
 end
