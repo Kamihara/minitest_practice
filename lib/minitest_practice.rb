@@ -27,4 +27,9 @@ class Main
     return m/n
   end
 
+  def fizzbuzz(n)
+    fizzbuzz = ['fizzbuzz','','','fizz','','buzz','fizz','','','fizz','buzz','','fizz','','']
+    return fizzbuzz[n % 15]
+  end
+
 end

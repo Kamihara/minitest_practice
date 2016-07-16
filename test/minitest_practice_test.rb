@@ -34,4 +34,11 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal message, @minitest.divide(0, 23), 'divide by 0 is not allowd'
   end
 
+  def test_method_fizzbuzz
+    assert_equal "fizz", @minitest.fizzbuzz(6), 'return "fizz"'
+    assert_equal "buzz", @minitest.fizzbuzz(20), 'return "buzz"'
+    assert_equal "fizzbuzz", @minitest.fizzbuzz(90), 'return "fizzbuzz"'
+    assert_equal "", @minitest.fizzbuzz(91), 'return ""'
+  end
+
 end
