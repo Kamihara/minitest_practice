@@ -19,4 +19,12 @@ class MinitestPracticeTest < Minitest::Test
     refute @minitest.check_number?(2345), '2345 NG (odd)'
     refute @minitest.check_number?(345),  '345 NG (insuffcient number of digits)'
   end
+
+  def test_method_enough_length?
+    assert @minitest.enough_length?('minitest'), 'OK'
+    refute @minitest.enough_length?('minitests'), 'NG (length overflow)'
+    assert @minitest.enough_length?('tst'), 'OK'
+    refute @minitest.enough_length?('mn'), 'NG (insufficient length)'
+  end
+
 end

@@ -4,8 +4,6 @@ class Main
   def odd?(n)
     if n % 2 == 1
       return true
-    else
-      return false
     end
   end
 
@@ -15,4 +13,11 @@ class Main
     end
     return !(odd?(n))
   end
+
+  def enough_length?(s)
+    if s.length <= 8 && s.length >= 3
+      return true
+    end
+  end
+
 end
