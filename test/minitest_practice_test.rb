@@ -28,10 +28,10 @@ class MinitestPracticeTest < Minitest::Test
   end
 
   def test_method_devide
-    message = "divide by 0 is not allowd"
+    message = "divide by 0 is not allowed"
     assert_equal 2, @minitest.divide(3, 6), '6 / 3 = 2'
     assert_equal 4, @minitest.divide(5, 23), '23 / 5 = 4 ... 3'
-    assert_equal message, @minitest.divide(0, 23), 'divide by 0 is not allowd'
+    assert_equal message, @minitest.divide(0, 23), 'divide by 0 is not allowed'
   end
 
   def test_method_fizzbuzz
@@ -39,6 +39,7 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal "buzz", @minitest.fizzbuzz(20), 'return "buzz"'
     assert_equal "fizzbuzz", @minitest.fizzbuzz(90), 'return "fizzbuzz"'
     assert_equal "", @minitest.fizzbuzz(91), 'return ""'
+    refute_equal "", @minitest.fizzbuzz(120), 'return ""'
   end
 
   def test_method_greet

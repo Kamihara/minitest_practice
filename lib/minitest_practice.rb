@@ -22,7 +22,7 @@ class Main
 
   def divide(n, m)
     if n == 0
-      return 'divide by 0 is not allowd'
+      return 'divide by 0 is not allowed'
     end
     return m/n
   end
